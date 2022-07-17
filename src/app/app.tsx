@@ -1,19 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import { DashboardComponent } from "./components";
+import { BackgroundComponent, DashboardComponent } from "@components";
 
 const App: React.FC = (): JSX.Element => {
-
-  React.useEffect(() => {
+  useEffect(() => {
     const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
+      el: document.querySelector("[data-scroll-container]"),
       smooth: true,
     });
   });
   return (
-    <div className="app" data-scroll-container>
-      <DashboardComponent />
-      <DashboardComponent />
+    <div className="app" data-scroll-container data-scroll>
+      <BackgroundComponent />
       <DashboardComponent />
     </div>
   );

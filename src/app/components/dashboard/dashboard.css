@@ -1,0 +1,12 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+.greeting {
+  font-size: 12vw;
+  color: #263238;
+  text-align: center;
+}
+.birthday {
+  margin: 0;
+}

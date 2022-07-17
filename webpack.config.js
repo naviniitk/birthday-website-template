@@ -12,10 +12,11 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       "@components": path.resolve(__dirname, "src/app/components/index"),
+      "@images": path.resolve(__dirname, "src/app/images"),
     },
     fallback: {
-      path: false
-    }
+      path: false,
+    },
   },
   output: {
     path: path.join(__dirname, "/dist"),
@@ -53,6 +54,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
+      favicon: "./public/favicon.ico",
     }),
     new webpack.DefinePlugin({
       CONFIG: JSON.stringify(CONFIG),
