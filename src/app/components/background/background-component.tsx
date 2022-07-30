@@ -11,9 +11,6 @@ const BackgroundComponent: React.FC = () => {
     "20vw",
     "30vw",
     "31vw",
-    "32vw",
-    "33vw",
-    "34vw",
     "35vw",
     "36vw",
     "37vw",
@@ -30,10 +27,10 @@ const BackgroundComponent: React.FC = () => {
   for (let i = 0; i < numBalls; i++) {
     const color = colors[Math.floor(Math.random() * colors.length)];
     const width = sizes[Math.floor(Math.random() * sizes.length)];
-    const left = `${Math.floor(Math.random() * 90) - 30}vw`;
+    const left = `${Math.floor(Math.random() * 100) - 30}vw`;
     const top = `${prevTop}vh`;
     prevTop = Number(width.slice(0, -2)) + Number(top.slice(0, -2));
-    const speed = Math.floor(Math.random() * 8) + 1;
+    const speed = Math.floor(Math.random() * 8) + 4;
     const ballProps = { color, left, top, width, speed };
     balls.push(ballProps);
   }

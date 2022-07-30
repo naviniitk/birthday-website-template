@@ -8,3 +8,6 @@
 
 # misc
 /config
+
+# Local Netlify folder
+.netlify

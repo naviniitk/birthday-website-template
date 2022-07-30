@@ -4,17 +4,26 @@
   background-color: #ffffff40;
   color: #263238;
   border-radius: 8px;
-  height: 70vh;
+  height: 35vh;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin: 2.5vh 0;
 }
 .image-info-text {
+  font-size: 4vw;
   padding: 5vh 5vw;
+  color: #455A64;
+}
+.images {
+  max-width: 50%;
+  min-width: fit-content;
 }
 @media (max-width: 768px) {
   .card {
-    flex-direction: column;
+    flex-direction: column !important;
+    align-items: center;
+    height: auto;
   }
   .images {
     text-align: center;
@@ -25,11 +34,4 @@
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.info-text {
-  opacity: 0;
-  transition: opacity 3s;
-}
-.info-scroll {
-  opacity: 1;
 }
