@@ -17,9 +17,9 @@ const DashboardComponent: React.FC = () => {
   return (
     <div data-scroll className="dashboard">
       <SectionComponent>
-        <span className="greeting birthday">Happy Birthday</span>
+        <span className="greeting birthday"></span>
         <Typical
-          steps={["Rajani (Asha ki Nirasha)", 4000]}
+          steps={["Happy Birthday Rajani", 4000]}
           loop={Infinity}
           className="greeting birthday"
         />
@@ -27,52 +27,52 @@ const DashboardComponent: React.FC = () => {
       <SectionComponent>
         <CardComponent
           header=""
-          text="Haaye ye smile, kahan leke jayegi Rajjo"
+          text="Woaah, that's some smile"
           reverse={false}
         >
           <img className="img" src={Img5} alt="" />
         </CardComponent>
         <CardComponent
           header=""
-          text="Dekh raha h Vinod... Haan bas dekh hi raha h"
+          text="This is a random picture I found from gallery"
           reverse={true}
         >
           <img className="img" src={Img17} alt="" />
         </CardComponent>
       </SectionComponent>
       <SectionComponent>
-        <div className="greeting">Neeche bhi scroll kar bsdk</div>
+        <div className="greeting">Scroll down, there's a lot more</div>
       </SectionComponent>
       <SectionComponent>
         <CardComponent
           header=""
-          text="Are kha gyi vo mallu porn ki link.... Yhi to likh kr rkhi thi"
+          text="Studying so hard that you forget even clothes"
           reverse={false}
         >
           <img className="img" src={Img18} alt="" />
         </CardComponent>
         <CardComponent
           header=""
-          text="Isro ka rocket hawa me udne se phle k kch andekhe pal"
+          text="Some unseen moments before the isro rocket flight"
           reverse={true}
         >
           <img className="img" src={Img19} alt="" />
         </CardComponent>
       </SectionComponent>
       <SectionComponent>
-        <div className="greeting">Thoda aur neeche jao Darling</div>
+        <div className="greeting">There are few more steps</div>
       </SectionComponent>
       <SectionComponent>
-      <CardComponent
+      {/* <CardComponent
           header=""
           text="Maaf kijiyega saale sahab :- Rajani KaMeena"
           reverse={false}
         >
           <img className="img" src={Img20} alt="" />
-        </CardComponent>
+        </CardComponent> */}
         <CardComponent
           header=""
-          text="Aaj to aam ko choos choos ke kahunga"
+          text="Yes this guy is the mango thief"
           reverse={true}
         >
           <img className="img" src={Img8} alt="" />
@@ -80,7 +80,7 @@ const DashboardComponent: React.FC = () => {
       </SectionComponent>
       <SectionComponent>
         <div className="greeting">
-          Itna kaafi hona chahiye yaar bahut kar liya
+          I guess this should be enough, maybe a bit more
         </div>
       </SectionComponent>
       <SectionComponent>
@@ -100,12 +100,12 @@ const DashboardComponent: React.FC = () => {
         </CardComponent>
       </SectionComponent>
       <SectionComponent>
-        <div className="greeting">Bas itna hi thha, maje karo</div>
+        <div className="greeting">Well that should be the end then</div>
       </SectionComponent>
       <SectionComponent>
         <CardComponent
           header=""
-          text="My one and Only ❤️"
+          text="A truly awsome friend ❤️"
           reverse={false}
         >
           <img className="img" src={Img6} alt="" />
@@ -117,20 +117,6 @@ const DashboardComponent: React.FC = () => {
         >
           <img className="img" src={Img2} alt="" />
         </CardComponent>
-      </SectionComponent>
-      <SectionComponent>
-        <div className="greeting">
-          <span>
-            <a
-              href="https://gogoanime.lu/category/kimi-no-na-wa"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Your Name
-            </a>
-          </span>{" "}
-          dekh lena, bahut baar bol chuka
-        </div>
       </SectionComponent>
     </div>
   );
